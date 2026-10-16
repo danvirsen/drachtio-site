@@ -1,0 +1,90 @@
+[
+  {
+    "text": "Overview",
+    "link": "/docs/"
+  },
+  {
+    "text": "Drachtio Server",
+    "items": [
+      {
+        "text": "Installing",
+        "link": "/docs/server/installing"
+      },
+      {
+        "text": "Running",
+        "link": "/docs/server/running"
+      },
+      {
+        "text": "Configuring",
+        "link": "/docs/server/configuring"
+      },
+      {
+        "text": "Messaging protocol",
+        "link": "/docs/server/messaging-protocol"
+      }
+    ]
+  },
+  {
+    "text": "Drachtio SRF",
+    "items": [
+      {
+        "text": "Introduction",
+        "link": "/docs/srf/introduction"
+      },
+      {
+        "text": "Middleware",
+        "link": "/docs/srf/middleware"
+      },
+      {
+        "text": "SIP Messages",
+        "link": "/docs/srf/sip-messages"
+      },
+      {
+        "text": "SIP Dialogs",
+        "link": "/docs/srf/sip-dialogs"
+      },
+      {
+        "text": "SIP Proxy",
+        "link": "/docs/srf/sip-proxy"
+      },
+      {
+        "text": "Call Detail Records",
+        "link": "/docs/srf/call-detail-records"
+      },
+      {
+        "text": "Advanced Topics",
+        "link": "/docs/srf/advanced-topics"
+      },
+      {
+        "text": "API Reference",
+        "link": "/docs/srf/api/",
+        "items": [
+          {
+            "text": "Srf",
+            "link": "/docs/srf/api/srf"
+          },
+          {
+            "text": "Dialog",
+            "link": "/docs/srf/api/dialog"
+          },
+          {
+            "text": "Request",
+            "link": "/docs/srf/api/request"
+          },
+          {
+            "text": "Response",
+            "link": "/docs/srf/api/response"
+          },
+          {
+            "text": "SipMessage",
+            "link": "/docs/srf/api/sipmessage"
+          },
+          {
+            "text": "SipError",
+            "link": "/docs/srf/api/siperror"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,13 +1,7 @@
 node_modules/
-drachtio/
-drachtio-srf/
+src/.vitepress/dist/
+src/.vitepress/cache/
 .DS_Store
-.eslintrc.json
-.eslintignore
-.env
-now.json
-content/data/*
-docs/**/*.html
-config.development.json
-config.production.json
-local.json
+
+# local clones of drachtio-server and drachtio-srf (see AGENTS.md)
+upstream/

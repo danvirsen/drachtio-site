@@ -1,0 +1,175 @@
+/* drachtio.org brand colors (see public/styles/src/variables.scss in drachtio-site) */
+:root {
+  --vp-c-brand-1: #d91c5c;
+  --vp-c-brand-2: #e8457b;
+  --vp-c-brand-3: #d91c5c;
+  --vp-c-brand-soft: rgba(217, 28, 92, 0.14);
+}
+
+.dark {
+  --vp-c-brand-1: #f0628f;
+  --vp-c-brand-2: #e8457b;
+  --vp-c-brand-3: #d91c5c;
+  --vp-c-brand-soft: rgba(240, 98, 143, 0.16);
+}
+
+.VPNavBarTitle .logo {
+  height: 28px;
+}
+
+/* "On this page": wrap long headings instead of truncating them with an ellipsis */
+.VPDocAsideOutline .outline-link {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  line-height: 1.4;
+  padding: 5px 0;
+}
+
+/* home page sections: separated by a line, two columns, stacked on small screens */
+.home-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  padding: 64px 0;
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+/* let grid items shrink below their content's width (code, images) on small screens */
+.home-section > * {
+  min-width: 0;
+}
+
+.home-section-single {
+  grid-template-columns: 1fr;
+}
+
+.home-section-single p {
+  max-width: 760px;
+}
+
+.home-section h2 {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.home-section-image {
+  width: 100%;
+  max-width: 420px;
+  justify-self: center;
+}
+
+.five-nines {
+  justify-self: center;
+  padding: 0.3em 0.9em;
+  border: 6px solid var(--vp-c-brand-1);
+  border-radius: 2em;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: var(--vp-c-brand-1);
+}
+
+@media (max-width: 768px) {
+  .home-section {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 48px 0;
+  }
+
+  .five-nines {
+    font-size: 40px;
+    border-width: 4px;
+  }
+}
+
+/* about page: contributors in their own shaded band */
+.about-contributors {
+  margin-top: 48px;
+  padding: 8px 32px 32px;
+  border-radius: 16px;
+  background: var(--vp-c-bg-soft);
+}
+
+.about-contributors h2 {
+  margin-top: 24px;
+  padding-top: 0;
+  border-top: none;
+  text-align: center;
+}
+
+.contributor {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.contributor img {
+  width: 140px;
+  height: 140px;
+  /* inner brand-colored ring (padding over the background) and outer light ring */
+  padding: 4px;
+  background: var(--vp-c-brand-1);
+  background-clip: padding-box;
+  /* a translucent brand color: light pink on light backgrounds, muted pink on dark ones */
+  border: 4px solid color-mix(in srgb, var(--vp-c-brand-1) 30%, transparent);
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.contributor h3 {
+  margin-top: 0;
+  /* center the smaller GitHub handle vertically against the name */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* the GitHub handle next to the contributor's name */
+.contributor h3 a {
+  margin-left: 0.85em;
+  font-size: 0.85em;
+  font-weight: 400;
+  color: var(--vp-c-text-2);
+  text-decoration: none;
+}
+
+.contributor h3 a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .contributor {
+    flex-direction: column;
+  }
+}
+
+/* home hero: the code card replaces the default fixed-size image box, and goes after the text */
+.VPHome .VPHero .image {
+  order: 2;
+  margin: 40px 0 0;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.VPHome .VPHero .image-container {
+  width: 100%;
+  height: auto;
+  transform: none;
+  justify-content: center;
+}
+
+.VPHome .VPHero .image-bg {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .VPHome .VPHero .image {
+    flex-grow: 1;
+    margin: 0 0 0 48px;
+  }
+}

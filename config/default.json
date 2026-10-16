@@ -1,6 +1,0 @@
-{
-  "md": {
-    "docs": ["developer-guide", "api", "drachtio-server"],
-    "api": ["srf", "dialog", "sip_error"]
-  }
-}
